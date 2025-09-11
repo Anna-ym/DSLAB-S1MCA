@@ -1,0 +1,21 @@
+#first{
+    color: brown;
+}
+#second{
+    color: aquamarine;
+}
+.abc{
+    color: chartreuse;
+}
+.def{
+    color: cornflowerblue;
+}
+h2,h4{
+    color: black;
+}
+p.abc{
+    color: darkorchid;
+}
+*{
+    color:black;
+}

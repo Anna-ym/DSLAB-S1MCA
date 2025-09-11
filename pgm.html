@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pgm6.css">
+    <style>
+        section{
+            text-align: center;
+            color: brown;
+        }
+        .contain{
+            text-align: center;
+        }
+        .container{
+            text-align: right;
+        }
+
+       
+    </style>
+</head>
+<body style="background-color: rgb(246, 249, 249);">
+    <header><h1>CSS[CASCADING STYLE SHEETS]</h1></header>
+    <nav>
+    <a href="#Introduction">INTRODUCTION &nbsp; &nbsp;</a>
+    <a href="#Properties">PROPERTIES &nbsp; &nbsp;</a>
+    <a href="#Types">TYPES</a>
+  </nav>
+<br>
+   <section>
+    CSS stands for Cascading Style Sheets. It is a stylesheet language used to style and enhance website presentation.<br> CSS is one of the three main components of a webpage, along with HTML and JavaScript.<br>
+
+HTML adds Structure to a web page.<br>
+JavaScript adds logic to it and CSS makes it visually appealing or stylish.<br> It controls the layout of a web page i.e. how HTML elements will be displayed on a webpage.<br>
+CSS was released (in 1996), 3 years after HTML (in 1993).<br> The main idea behind its use is that it allows the separation of content (HTML) from presentation (CSS).<br> This makes websites easier to maintain and more flexible.<br><br><br>
+   </section>
+   <div id="main">
+   <div id="main1">
+    <h2 id="Introduction"></h2>
+    <p><h2 class="contain"><b>INTRODUCTION</b></h2><br>
+       <center><img src="Webpage-With---without-CSS.webp"><br></center> 
+        <h3>Features</h3><br>
+<b>Saves Time</b> Write CSS once and reuse it across multiple HTML pages.<br>
+<b>Easy Maintenance</b>: Change the style globally with a single modification.<br>
+<b>Search Engine Friendly</b>: Clean coding technique that improves readability for search engines.<br>
+<b>Superior Styles</b>: Offers a wider array of attributes compared to HTML.<br>
+<b>Offline Browsing</b>: CSS can store web applications locally using an offline cache, allowing offline viewing.<br><br>
+<b>CSS Syntax</b><br><br>
+SS consists of style rules that are interpreted by the browser and applied to the corresponding elements. A style rule set includes a selector and a declaration block.<br>
+
+<b>Selector</b>: Targets specific HTML elements to apply styles.<br>
+<b>Declaration</b>: Combination of a property and its corresponding value.<br><br>
+
+
+The CSS code targets the h1 element with the selector h1. <br>The declaration { color: blue; font-size: 12px; } sets the text color to blue and the font size to 12 pixels.<br>
+
+The selector points to the HTML element that you want to style.<br>
+The declaration block contains one or more declarations separated by semicolons.<br>
+Each declaration includes a CSS property name and a value, separated by a colon.<br><br>
+<b>Example</b><br><br>
+
+p {<br>
+    color: blue;<br>
+    text-align: center;<br>
+}<br>
+CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.<br> In this example, all paragraph element (p tag) will be centre-aligned, with a blue text color.<br><br><BR></div>
+<hr style="height:0.5px">
+   <div id="main2"><div id="format"> <h2 id="Properties"></h2><br>
+    <h2 class="contain"><b>PROPERTIES</b></h2><br>
+    <center><img src="Common CSS Properties.webp"><br></center> 
+   <p><h2> Basic Properties</h2><br>
+<b>☆ color</b>: Sets the color of the text.<br><i id="clr"> p { color: blue; }</i><br>
+<b>☆ background-color</b>: Sets the background color of an element. <br><i id="clr">div { background-color: yellow; }</i><br>
+<b>☆ font-size</b>: Sets the size of the font. <br><i id="clr">h1 { font-size: 24px; }</i><br></p><br>
+<div class="container">
+    <p><h2>Box Model Properties</h2><br><br>
+<b>☆ margin</b>: Sets the space around elements. <br> <i id="clr">box { margin: 20px; }</i><br>
+<b>☆ padding</b>: Sets the space between the content and the border of an element. <br><i id="clr">box { padding: 10px; }</i><br>
+<b>☆ border</b>: Sets the border around an element. <br><i id="clr">box { border: 1px solid black; }</i><br><br></p></div>
+
+    <p><h2 >Layout Properties</h2><br>
+        <b>☆ display</b>: Specifies how an element is displayed. <br><i id="clr">container { display: flex; }</i><br>
+<b>☆ position</b>: Specifies the positioning method for an element. <br><i id="clr">element { position: absolute; top: 50px; left: 100px; }</i><br>
+<b>☆ float</b>: Specifies whether an element should float to the left or right. <br><i id="clr">image { float: left; }</i><br><br></p>
+
+<div class="container">
+    <p class="alignment"><h2 >Text Properties</h2><br>
+        <b>☆ text-align</b>: Sets the horizontal alignment of text. <br><i id="clr">text { text-align: center; }</i><br>
+<b>☆ text-decoration</b>: Adds decoration to text (e.g., underline, overline). <br><i id="clr">link { text-decoration: underline; }</i><br>
+<b>☆ line-height</b>: Sets the height of a line of text. <br><i id="clr">paragraph { line-height: 1.5; }</i><br><br></p></div>
+
+    <p><h2 >Background Properties</h2><br>
+        <b>☆ background-image</b>: Sets a background image for an element. <br><i id="clr">header { background-image: url('image.jpg'); }</i><br>
+<b>☆ background-size</b>: Specifies the size of the background image. <br><i id="clr">header { background-size: cover; }</i><br>
+<b>☆ background-repeat</b>: Specifies whether the background image should repeat. <br><i id="clr">header { background-repeat: no-repeat; }</i><br><br></p>
+
+<div class="container">
+    <p class="alignment"><h2>Animation Properties</h2><br>
+       <b>☆ animation-name</b>: Specifies the name of the @keyframes animation. <br><i id="clr">box { animation-name: slide; }</i><br>
+<b>☆ animation-duration</b>: Specifies the duration of the animation. <br><i id="clr">box { animation-duration: 2s; }</i><br>
+<b>☆ animation-timing-function</b>: Specifies the timing function of the animation. <br><i id="clr">box { animation-timing-function: ease-in-out; }</i><br><BR><BR><BR></p></div></div><br></div>
+
+<hr style="height:0.5px"><br>
+    <div id="main3"></div><h2 id="Types"></h2>
+     <p><h2 class="contain">TYPES OF CSS</h2><br>
+      <h3> 1. INLINE CSS</h3><br>
+        <center><img src="Inline-CSS.png"><br></center>
+Inline CSS involves applying styles directly to individual HTML elements using the style attribute.<br> This method allows for specific styling of elements within the HTML document, overriding any external or internal styles.</h5><br><br><BR>
+<h3>INTERNAL OR EMBEDDED CSS</h3> <br>
+   <center><img src="Internal-CSS.png"><br></center>
+Internal or Embedded CSS is defined within the HTML document's style element. <br>It applies styles to specified HTML elements. <br>The CSS rule set should be within the HTML file in the head section, i.e. the CSS is embedded within the style tag inside the head section of the HTML file.<br><BR>
+    <h3> EXTERNAL CSS</h3>
+     <center><img src="External-CSS.png"><br></center>
+     External CSS contains separate CSS files that contain only style properties with the help of tag attributes (For example class, id, heading, ... etc).<BR> CSS property is written in a separate file with a .css extension and should be linked to the HTML document using a link tag.<BR> It means that, for each element, style can be set only once and will be applied across web pages.<BR>
+     When to Use Inline CSS
+For quick fixes and small changes that don’t require a separate CSS file.
+When you need to override other styles for a particular element.
+If you’re working on emails or HTML-based applications where external CSS is not supported.
+When to Use Internal CSS
+When designing a single-page website.
+If you need better control over styling than inline CSS.
+For small to medium-sized projects where external CSS might be unnecessary.
+When to Use External CSS
+For large-scale projects where multiple pages share a common design.
+When maintainability and scalability are priorities.
+To improve website performance and load times using CSS caching.</p></div></div>
+
+<footer>
+    <p>&copy; 2025 My WebPage. All Right Reserved.</p>
+</footer>
+</body>
+</html>
